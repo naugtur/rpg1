@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Glegoo');
+
+body {
+  font-family: 'Glegoo', sans-serif;
+}
+
 .grid{
   width: 21cm;
   height: 16cm;
@@ -32,7 +38,7 @@
   
 }
 
-.chart i{
+.chart>*{
   display:block;
   float:left;
   width:7mm;
@@ -41,8 +47,7 @@
   border-bottom:none;
   border-right:none;
   position: relative;
-  display: block;
-  overflow:hidden;
+/*   overflow:hidden; */
   color: #777;
 }
   .chart i:before,
@@ -78,4 +83,40 @@
 .chart i:nth-child(n+111) {
   color: transparent;
   height: 25mm;
+}
+
+
+.chart>i>div{
+  display:block;
+  position: absolute;
+  border: 0.2mm solid #777;
+  width:3mm;
+  height:3mm;
+  line-height:3mm;
+  top: -2mm;
+  left: -2mm;
+  border-radius: 50%;
+  background:#fff;
+  z-index:2;
+  overflow:hidden;
+  font-size: 2mm;
+  text-align: center;
+  font-style:normal;
+  font-weight: bold;
+}
+
+.chart .legend {
+  color:#777;
+  width: 25mm;
+  height: 25mm;
+  font-size: 4mm;
+}
+.legend .special {
+  display:block;
+  text-align: right;
+}
+.legend .other {
+  display:block;
+  transform-origin: 0 7mm;
+  transform: rotate(90deg);
 }
