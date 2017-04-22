@@ -1,0 +1,81 @@
+.grid{
+  width: 21cm;
+  height: 16cm;
+  display:grid;
+  grid-gap: 1mm;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:  "main main dev dev dev dev"
+                        "skills items dev dev dev dev"
+                        "skills items spell1 spell2 spell3 spell4"
+}
+.main { grid-area: main }
+.skills { grid-area: skills }
+.items { grid-area: items }
+.devel { grid-area: dev }
+.spell1 { grid-area: spell1  }
+.spell2 { grid-area: spell2  }
+.spell3 { grid-area: spell3  }
+.spell4 { grid-area: spell4  }
+
+.grid>div {
+  border: 1px solid #aaa;
+}
+
+
+.grid>div {
+  border: 1px solid #aaa;
+}
+
+.chart {
+  padding: 3mm;
+  
+}
+
+.chart i{
+  display:block;
+  float:left;
+  width:7mm;
+  height: 7mm;
+  border: 0.2mm solid #777;
+  border-bottom:none;
+  border-right:none;
+  position: relative;
+  display: block;
+  overflow:hidden;
+  color: #777;
+}
+  .chart i:before,
+  .chart i:after {
+    content: '';
+    width: 100%;
+    
+    position: absolute;
+    left: -0mm;
+    top: 3.44mm;
+  }
+  .chart i:before {
+    
+    border-bottom-width: 0.4mm;
+    border-bottom-style: solid;
+    
+    transform: skewY(-45deg);
+  }
+  .chart i:after {
+     border-bottom-width: 0.4mm;
+    border-bottom-style: solid;
+    transform: skewY(45deg);
+  }
+
+
+.chart i:nth-child(11n+1){
+  clear:both;
+}
+.chart i:nth-child(11n) {
+  width:25mm;
+  color: transparent;
+}
+.chart i:nth-child(n+111) {
+  color: transparent;
+  height: 25mm;
+}
