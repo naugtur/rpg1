@@ -2,40 +2,81 @@
 
 body {
   font-family: 'Glegoo', sans-serif;
+  font-variant: small-caps;
+  font-size: 3.4mm;
+  line-height: 4mm;
+  color: #222;
 }
 
 .grid{
   width: 21cm;
-  height: 16cm;
   display:grid;
-  grid-gap: 1mm;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas:  "main main dev dev dev dev"
-                        "skills items dev dev dev dev"
-                        "skills items spell1 spell2 spell3 spell4"
+  grid-gap: 2mm;
+  grid-template-columns: 45mm 20mm 3mm 120mm 1fr;
+  grid-template-rows: 5mm 45mm 5mm 55mm 50mm;
+  grid-template-areas:  "name name . dev c"
+                        "main main . dev c"
+                        "hp hp . dev c"
+                        "items skills . dev c"
+                        "items skills . addons addons"
 }
 .main { grid-area: main }
+.name { grid-area: name }
 .skills { grid-area: skills }
 .items { grid-area: items }
 .devel { grid-area: dev }
-.spell1 { grid-area: spell1  }
-.spell2 { grid-area: spell2  }
-.spell3 { grid-area: spell3  }
-.spell4 { grid-area: spell4  }
+.c { grid-area: c }
+.hp { grid-area: hp }
+.addons { grid-area: addons }
 
-.grid>div {
-  border: 1px solid #aaa;
+.skills, .items, .hp, .addons {
+  padding: 0 1mm;
 }
 
+.skills li {
+  background: transparent url("5.svg") no-repeat bottom right;
+  padding-bottom: 1.5mm;
+  margin-bottom: 0.5mm;
+  height: 3.5mm;
+}
 
 .grid>div {
-  border: 1px solid #aaa;
+  border: 1px solid #777;
+  position: relative;
+}
+
+.main {
+  background: transparent url('char.jpg') no-repeat center;
+  background-size: contain;
+  position: relative;
+}
+.main .head{
+  position: absolute;
+  top: 3mm;
+  right: 10mm;
+}
+.main .left {
+  padding: 15mm 5mm 0;
+}
+.main .right {
+  float:right;
+  padding: 15mm 5mm 0;
+}
+
+.hp {
+  text-align: right;
+  line-height: 5mm;
+  color: #222;
+  font-size: 2.5mm;
+}
+
+li img {
+  display:block;
 }
 
 .chart {
   padding: 3mm;
-  
+
 }
 
 .chart>*{
@@ -43,27 +84,27 @@ body {
   float:left;
   width:7mm;
   height: 7mm;
-  border: 0.2mm solid #777;
+  border: 0.2mm solid #222;
   border-bottom:none;
   border-right:none;
   position: relative;
 /*   overflow:hidden; */
-  color: #777;
+  color: #222;
 }
   .chart i:before,
   .chart i:after {
     content: '';
     width: 100%;
-    
+
     position: absolute;
     left: -0mm;
     top: 3.44mm;
   }
   .chart i:before {
-    
+
     border-bottom-width: 0.4mm;
     border-bottom-style: solid;
-    
+
     transform: skewY(-45deg);
   }
   .chart i:after {
@@ -77,19 +118,19 @@ body {
   clear:both;
 }
 .chart i:nth-child(11n) {
-  width:25mm;
+  width:35mm;
   color: transparent;
 }
 .chart i:nth-child(n+111) {
   color: transparent;
-  height: 25mm;
+  height: 30mm;
 }
 
 
 .chart>i>div{
   display:block;
   position: absolute;
-  border: 0.2mm solid #777;
+  border: 0.2mm solid #222;
   width:3mm;
   height:3mm;
   line-height:3mm;
@@ -106,17 +147,60 @@ body {
 }
 
 .chart .legend {
-  color:#777;
-  width: 25mm;
-  height: 25mm;
-  font-size: 4mm;
+  color:#222;
+  width: 35mm;
+  height: 30mm;
+  font-size: 3mm;
+  font-variant: small-caps;
 }
 .legend .special {
   display:block;
-  text-align: right;
+  text-align: center;
 }
 .legend .other {
   display:block;
-  transform-origin: 0 7mm;
+  transform-origin: 0 5mm;
   transform: rotate(90deg);
+}
+
+.addons {
+  columns: 3;
+  padding: 1mm;
+}
+
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+
+}
+
+.name:before{
+  content:"name";
+}
+.hp:before{
+  content:"health";
+}
+.items:before{
+  content:"possesions";
+}
+.skills:before{
+  content:"traits";
+}
+.devel:before{
+  content:"skill development";
+}
+.addons:before{
+  content:"basic rules";
+}
+.grid>div:before{
+  color: #222;
+  background: #fff;
+  padding: 0 1mm;
+  font-size: 2.2mm;
+  line-height: 3mm;
+  top: -2mm;
+  left: 1mm;
+  position:absolute;
 }
