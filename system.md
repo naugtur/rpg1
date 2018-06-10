@@ -111,8 +111,10 @@ You design one by spending `LEVEL * 5` points to fill the card:
 #### Sanity
 
 Put a sanity bar above your HP bar. 
+```
 _ _ _ _ _ | _ _ _ | @
 ok        losing it  crazy
+```
 
 Fill in the "loosing it" section. Fill the ok section up to `WITS`
 
