@@ -12,18 +12,19 @@ body {
   width: 21cm;
   display:grid;
   grid-gap: 2mm;
-  grid-template-columns: 45mm 20mm 3mm 120mm 1fr;
+  grid-template-columns: 45mm 20mm 1mm 118mm 1fr;
   grid-template-rows: 5mm 45mm 5mm 55mm 50mm;
   grid-template-areas:  "name name . dev c"
                         "main main . dev c"
                         "hp hp . dev c"
                         "items skills . dev c"
-                        "items skills . addons addons"
+                        "luggage skills . addons addons"
 }
 .main { grid-area: main }
 .name { grid-area: name }
 .skills { grid-area: skills }
 .items { grid-area: items }
+.luggage { grid-area: luggage }
 .devel { grid-area: dev }
 .c { grid-area: c }
 .hp { grid-area: hp }
@@ -50,17 +51,35 @@ body {
   background-size: contain;
   position: relative;
 }
-.main .head{
+
+.main>img {
   position: absolute;
+}
+.main .head{
   top: 3mm;
-  right: 10mm;
+  right: 14mm;
+}
+.main .chest{
+  top: 13mm;
+  right: 25mm;
 }
 .main .left {
-  padding: 15mm 5mm 0;
+  top: 18mm;
+  left: 8mm
+  
 }
 .main .right {
-  float:right;
-  padding: 15mm 5mm 0;
+  top: 18mm;
+  right: 8mm
+}
+.main .left2 {
+  top: 32mm;
+  left: 8mm
+  
+}
+.main .right2 {
+  top: 32mm;
+  right: 8mm
 }
 
 .hp {
@@ -164,8 +183,9 @@ li img {
 }
 
 .addons {
-  columns: 3;
+  /*! columns: 3; */
   padding: 1mm;
+  font-size: 0.8em;
 }
 
 
@@ -183,6 +203,9 @@ ul, li {
   content:"health";
 }
 .items:before{
+  content:"possesions - carrying";
+}
+.luggage:before{
   content:"possesions";
 }
 .skills:before{
@@ -203,4 +226,30 @@ ul, li {
   top: -2mm;
   left: 1mm;
   position:absolute;
+}
+
+/*=================*/
+.cards {
+  margin: 2mm 0;
+}
+
+.card{
+  width: 5cm;
+  height: 67mm;
+  border: 1px solid #222;
+  float:left;
+  margin: 1mm 1mm 0 0;
+}
+.card li:first-child {
+  height: 27.5mm;
+  border-top: none;
+  text-align: right;
+}
+.card li {
+  border-top: 1px solid #444;
+  padding: 1px 3px;
+}
+.card li img {
+  float:right;
+  margin-top: 2mm;
 }
