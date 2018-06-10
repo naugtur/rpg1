@@ -6,7 +6,8 @@
 
 All character traits are values 0-5
 Character has only 2 basic traits: `BODY` and `WITS`
-When creating one, you have 6 points to distribute between the 2
+When creating one, you have 6 points to distribute between the two.
+You can use one of the points to increase wealth to 2 instead.
 
 Other traits get added on, they are skills (but you can bend the rule a little and add more traits as well)
 
@@ -20,6 +21,16 @@ When you put armor on, add big dots under the slots to record that.
 Treatment can regain points in "out" section
 First Aid and resting can regain points in "hurting" section.
 Resting can regain points in "OK" section.
+
+#### Wealth
+
+Instead of counting coins or credits, there's a wealth factor here.
+- 0 - you can afford nothing, even food
+- 1 - you can afford food and travel and cheap items
+- 2 - middle class
+- 3 - seriously rich, can buy any common item without making a dent
+
+You start with 1. It changes based on the story, no mechanics for that.
 
 #### Skills
 

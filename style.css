@@ -228,6 +228,10 @@ ul, li {
   position:absolute;
 }
 
+.luggage {
+  text-align: right;
+  padding: 1mm
+}
 /*=================*/
 .cards {
   margin: 2mm 0;
