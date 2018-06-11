@@ -211,7 +211,7 @@
         <div class="c"></div>
         <div class="addons">
             <ul>
-                <li><b>skill test</b> SKILL x K6; count K6>DIFFICULTY </li>
+                <li><b>skill test</b> 1+SKILL x K6; count K6>DIFFICULTY </li>
                 <li>1. barely and slow 2. done 3. good 4. good and quick 5. epic</li>
                 <li><b>attacking</b> A:ATTACK x K6; any K6>D:WITS success; damage = count K6>D:ARMOR</li>
                 <li><b>attack trait</b> avg(BODY,weapon) avg(WITS,projectile)</li>
@@ -219,7 +219,11 @@
                     <b>health</b> resting | first aid + resting | treatment
                 </li>
                 <li>
-                    <b>feats/magic</b> Decrease HP by the level of used special. Use skill test mechanic with DIFFICULTY=LEVEL
+                    body part reaches 0 -> needs immediate treatment or is lost
+                </li>
+                <li>
+                    <b>feats/magic</b> Decrease HP by the level of used feat. 
+                    Use skill test mechanic with DIFFICULTY=LEVEL and test WITS
                 </li>
             </ul>
         </div>

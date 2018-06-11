@@ -45,7 +45,7 @@ You start with up to 3 skills. Write them in speciality and other sections depen
 
 #### Skill test
 
-Take `SKILL` of K6. Roll. 
+Take `1 + SKILL` of K6. Roll. 
 
 Count how many dice has `value > TEST DIFFICULTY`
 
@@ -105,6 +105,8 @@ You design one by spending `LEVEL * 5` points to fill the card:
 |damage| points of damage |
 |buff| points to add to a trait for given time or points healed|
 |illusion|cheats creatures with `WITS` lower or equal to illusion|
+
+Ok, ok, I'll allow spending 6 points on level 1. But don't push it.
 
 ### Plugins
 
