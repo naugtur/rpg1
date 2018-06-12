@@ -25,8 +25,7 @@
             ok
             <img src="5.svg"> | hurting
             <img src="3.svg"> | out
-            <img src="2.svg"> |
-            ☠
+            <img src="2.svg"> | ☠
         </div>
         <div class="skills">
             <ul>
@@ -56,7 +55,8 @@
 
         </div>
         <div class="luggage">
-            wealth <img src="3.svg">
+            wealth
+            <img src="3.svg">
 
         </div>
         <div class="devel">
@@ -211,20 +211,85 @@
         <div class="c"></div>
         <div class="addons">
             <ul>
-                <li><b>skill test</b> 1+SKILL x K6; count K6>DIFFICULTY </li>
-                <li>1. barely and slow 2. done 3. good 4. good and quick 5. epic</li>
-                <li><b>attacking</b> A:ATTACK x K6; any K6>D:WITS success; damage = count K6>D:ARMOR</li>
-                <li><b>attack trait</b> avg(BODY,weapon) avg(WITS,projectile)</li>
                 <li>
-                    <b>health</b> resting | first aid + resting | treatment
-                </li>
+                    <b>skill test</b> 1+SKILL x K6; count K6>DIFFICULTY 1. barely and slow 2. done 3. good 4. good and quick
+                    5. epic</li>
                 <li>
+                    <b>attacking</b> A:ATTACK x K6; any K6>D:WITS success; damage = count K6>D:ARMOR</li>
+                <li>
+                    <b>attack trait</b> avg(BODY,weapon) avg(WITS,projectile)</li>
+                <li>
+                    <b>regain health</b> [ resting | first aid + resting | treatment ]  
                     body part reaches 0 -> needs immediate treatment or is lost
                 </li>
                 <li>
-                    <b>feats/magic</b> Decrease HP by the level of used feat. 
-                    Use skill test mechanic with DIFFICULTY=LEVEL and test WITS
+                    <b>feats/magic</b> decrease HP by the level of used feat. use skill test mechanic with DIFFICULTY=LEVEL
+                    and test WITS. when creating one, spend 3+LEVEL*3 points
                 </li>
+                <li>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>0</th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>duration</td>
+                                <td>none, instant</td>
+                                <td>seconds</td>
+                                <td>minutes</td>
+                                <td>hours</td>
+                                <td>days</td>
+                                <td>years/forever</td>
+                            </tr>
+                            <tr>
+                                <td>preparation</td>
+                                <td>week</td>
+                                <td>day</td>
+                                <td>few hours</td>
+                                <td>0.5 hour</td>
+                                <td>minute</td>
+                                <td>none, instant</td>
+                            </tr>
+                            <tr>
+                                <td>distance</td>
+                                <td>0</td>
+                                <td>reach</td>
+                                <td>throw</td>
+                                <td>sight</td>
+                                <td>far...</td>
+                                <td>anywhere</td>
+                            </tr>
+                            <tr>
+                                <td>area</td>
+                                <td>point</td>
+                                <td>point</td>
+                                <td>arms reach</td>
+                                <td>room</td>
+                                <td>room</td>
+                                <td>horizon</td>
+                            </tr>
+                            <tr>
+                                <td>create/change</td>
+                                <td>nothing</td>
+                                <td>tiny</td>
+                                <td>tiny, moving</td>
+                                <td>dog size</td>
+                                <td>dog, moving</td>
+                                <td>any size</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li>damage: points; buff: points to add to a trait for given time or points healed; illusion: works on WITS &LessSlantEqual;
+                    illusion</li>
             </ul>
         </div>
     </div>
@@ -234,16 +299,19 @@
         <div class="card">
             <ul>
                 <li>level [ ]</li>
-                <li>time
+                <li>durat.
                     <img src="5.svg">
                 </li>
-                <li>cast
+                <li>prep.
                     <img src="5.svg">
                 </li>
                 <li>distance
                     <img src="5.svg">
                 </li>
                 <li>area
+                    <img src="5.svg">
+                </li>
+                <li>affect
                     <img src="5.svg">
                 </li>
                 <li>damage
@@ -253,9 +321,6 @@
                     <img src="5.svg">
                 </li>
                 <li>illusion
-                    <img src="5.svg">
-                </li>
-                <li>c/m/d
                     <img src="5.svg">
                 </li>
             </ul>
@@ -263,16 +328,19 @@
         <div class="card">
             <ul>
                 <li>level [ ]</li>
-                <li>time
+                <li>durat.
                     <img src="5.svg">
                 </li>
-                <li>cast
+                <li>prep.
                     <img src="5.svg">
                 </li>
                 <li>distance
                     <img src="5.svg">
                 </li>
                 <li>area
+                    <img src="5.svg">
+                </li>
+                <li>affect
                     <img src="5.svg">
                 </li>
                 <li>damage
@@ -282,9 +350,6 @@
                     <img src="5.svg">
                 </li>
                 <li>illusion
-                    <img src="5.svg">
-                </li>
-                <li>c/m/d
                     <img src="5.svg">
                 </li>
             </ul>
@@ -292,16 +357,19 @@
         <div class="card">
             <ul>
                 <li>level [ ]</li>
-                <li>time
+                <li>durat.
                     <img src="5.svg">
                 </li>
-                <li>cast
+                <li>prep.
                     <img src="5.svg">
                 </li>
                 <li>distance
                     <img src="5.svg">
                 </li>
                 <li>area
+                    <img src="5.svg">
+                </li>
+                <li>affect
                     <img src="5.svg">
                 </li>
                 <li>damage
@@ -311,9 +379,6 @@
                     <img src="5.svg">
                 </li>
                 <li>illusion
-                    <img src="5.svg">
-                </li>
-                <li>c/m/d
                     <img src="5.svg">
                 </li>
             </ul>
@@ -321,16 +386,19 @@
         <div class="card">
             <ul>
                 <li>level [ ]</li>
-                <li>time
+                <li>durat.
                     <img src="5.svg">
                 </li>
-                <li>cast
+                <li>prep.
                     <img src="5.svg">
                 </li>
                 <li>distance
                     <img src="5.svg">
                 </li>
                 <li>area
+                    <img src="5.svg">
+                </li>
+                <li>affect
                     <img src="5.svg">
                 </li>
                 <li>damage
@@ -340,9 +408,6 @@
                     <img src="5.svg">
                 </li>
                 <li>illusion
-                    <img src="5.svg">
-                </li>
-                <li>c/m/d
                     <img src="5.svg">
                 </li>
             </ul>
@@ -350,16 +415,19 @@
         <div class="card">
             <ul>
                 <li>level [ ]</li>
-                <li>time
+                <li>durat.
                     <img src="5.svg">
                 </li>
-                <li>cast
+                <li>prep.
                     <img src="5.svg">
                 </li>
                 <li>distance
                     <img src="5.svg">
                 </li>
                 <li>area
+                    <img src="5.svg">
+                </li>
+                <li>affect
                     <img src="5.svg">
                 </li>
                 <li>damage
@@ -369,9 +437,6 @@
                     <img src="5.svg">
                 </li>
                 <li>illusion
-                    <img src="5.svg">
-                </li>
-                <li>c/m/d
                     <img src="5.svg">
                 </li>
             </ul>
@@ -379,16 +444,19 @@
         <div class="card">
             <ul>
                 <li>level [ ]</li>
-                <li>time
+                <li>durat.
                     <img src="5.svg">
                 </li>
-                <li>cast
+                <li>prep.
                     <img src="5.svg">
                 </li>
                 <li>distance
                     <img src="5.svg">
                 </li>
                 <li>area
+                    <img src="5.svg">
+                </li>
+                <li>affect
                     <img src="5.svg">
                 </li>
                 <li>damage
@@ -398,9 +466,6 @@
                     <img src="5.svg">
                 </li>
                 <li>illusion
-                    <img src="5.svg">
-                </li>
-                <li>c/m/d
                     <img src="5.svg">
                 </li>
             </ul>
@@ -408,16 +473,19 @@
         <div class="card">
             <ul>
                 <li>level [ ]</li>
-                <li>time
+                <li>durat.
                     <img src="5.svg">
                 </li>
-                <li>cast
+                <li>prep.
                     <img src="5.svg">
                 </li>
                 <li>distance
                     <img src="5.svg">
                 </li>
                 <li>area
+                    <img src="5.svg">
+                </li>
+                <li>affect
                     <img src="5.svg">
                 </li>
                 <li>damage
@@ -427,9 +495,6 @@
                     <img src="5.svg">
                 </li>
                 <li>illusion
-                    <img src="5.svg">
-                </li>
-                <li>c/m/d
                     <img src="5.svg">
                 </li>
             </ul>
@@ -437,16 +502,19 @@
         <div class="card">
             <ul>
                 <li>level [ ]</li>
-                <li>time
+                <li>durat.
                     <img src="5.svg">
                 </li>
-                <li>cast
+                <li>prep.
                     <img src="5.svg">
                 </li>
                 <li>distance
                     <img src="5.svg">
                 </li>
                 <li>area
+                    <img src="5.svg">
+                </li>
+                <li>affect
                     <img src="5.svg">
                 </li>
                 <li>damage
@@ -456,9 +524,6 @@
                     <img src="5.svg">
                 </li>
                 <li>illusion
-                    <img src="5.svg">
-                </li>
-                <li>c/m/d
                     <img src="5.svg">
                 </li>
             </ul>

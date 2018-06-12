@@ -95,10 +95,10 @@ You design one by spending `3 + LEVEL * 3` points to fill the card:
 | | 0 | 1 | 2 | 3 | 4 | 5 |
 |---|---|---|---|---|---|---|
 |duration|none, instant|seconds |minutes|hours|days|years/forever|
-|time to cast|week|day|few hours |0.5 hour|minute |none, instant|
+|preparation|week|day|few hours |0.5 hour|minute |none, instant|
 |distance|0|reach|throw|sight|far...|anywhere|
 |area|point | point|arms reach|room|room|horizon|
-|creation, morphing, destruction|nothing|tiny|tiny, moving|dog size|dog size, moving|any size|
+|create/affect|nothing|tiny|tiny, moving|dog size|dog size, moving|any size|
 
 ||effect|
 |---|---|

@@ -185,7 +185,10 @@ li img {
 .addons {
   /*! columns: 3; */
   padding: 1mm;
-  font-size: 0.8em;
+  font-size: 0.7em;
+}
+.addons table{
+  line-height: 0.8em
 }
 
 
