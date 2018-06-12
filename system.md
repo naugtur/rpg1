@@ -90,23 +90,21 @@ There are two possible speeds of character development
 
 When you reach a circle with a number, you can gain a super skill on the level of the number.
 
-You design one by spending `LEVEL * 5` points to fill the card:
+You design one by spending `3 + LEVEL * 3` points to fill the card:
 
 | | 0 | 1 | 2 | 3 | 4 | 5 |
 |---|---|---|---|---|---|---|
 |duration|none, instant|seconds |minutes|hours|days|years/forever|
-|time to cast|days|hours|under 1h |minutes|seconds |none, instant|
+|time to cast|week|day|few hours |0.5 hour|minute |none, instant|
 |distance|0|reach|throw|sight|far...|anywhere|
 |area|point | point|arms reach|room|room|horizon|
-|creation, morphing, destruction|nothing|tiny|10cm|100cm|1000cm|any size|
+|creation, morphing, destruction|nothing|tiny|tiny, moving|dog size|dog size, moving|any size|
 
 ||effect|
 |---|---|
 |damage| points of damage |
 |buff| points to add to a trait for given time or points healed|
 |illusion|cheats creatures with `WITS` lower or equal to illusion|
-
-Ok, ok, I'll allow spending 6 points on level 1. But don't push it.
 
 ### Plugins
 
